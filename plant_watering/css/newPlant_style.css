@@ -13,7 +13,7 @@
 }
 
 .cancel {
-  color:  #FF8471;
+  color:  #fc9383;
   position: absolute;
   bottom: 20px;
   left: 15px;
@@ -80,7 +80,7 @@ select {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #FF8471;
+  background-color: #fc9383;
   -webkit-transition: .3s;
   transition: .3s;
 }

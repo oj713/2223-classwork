@@ -27,7 +27,7 @@ h1.balign {
 }
 
 /*color classes*/
-.lgreen {background-color: yellowgreen;}
+.lgreen {background-color: #98c942;}
 .green {background-color: #507437;}
 
 a {
@@ -50,7 +50,7 @@ div{
 
 .screen {
 	height: 800px;  
-	background-color: #C4D2AF; 
+	background-color: #b9cc9d; 
 	margin-left: auto;
 	margin-right: auto;
 }
