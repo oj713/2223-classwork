@@ -34,7 +34,7 @@
 input[type="text"] {
 	width: 180px;
 	border: none;
-	border-bottom: 4px dashed #507437;
+	border-bottom: 4px dashed #7b5248;
   margin-bottom: 20px;
 	background: transparent;
 	resize: none;
@@ -50,8 +50,8 @@ select {
 	font-weight: bold;
 	font-size: 30px;
   text-align: center;
-	color: #507437;
-	border: 2px solid #507437;
+	color: #7b5248;
+	border: 2px solid #7b5248;
 	padding: 10px;
 }
 

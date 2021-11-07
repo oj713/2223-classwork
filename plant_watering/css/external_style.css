@@ -9,7 +9,6 @@ body {
 }
 
 .text{
-	color: white;
 	font-size: 30px;
 	font-weight: bold;
 	font-family:  "Verdana", Geneva, sans-serif;
@@ -27,8 +26,10 @@ h1.balign {
 }
 
 /*color classes*/
-.lgreen {background-color: #98c942;}
-.green {background-color: #507437;}
+.lgreen {background-color: #a7c957;}
+.green {background-color: #386641;}
+.brown {background-color: #7b5248;}
+.midgreen{color: #6a994e;}
 
 a {
 	display: block;
@@ -50,12 +51,13 @@ div{
 
 .screen {
 	height: 800px;  
-	background-color: #b9cc9d; 
+	background-color: #f2e8cf; 
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .header{
+	color: white;
 	height: 105px;
 	padding: 10px 0px;
 	display: flex;
@@ -64,6 +66,7 @@ div{
 }
 
 .footer{
+	color: white;
 	display: flex;
 	justify-content: center;
 	height: 105px;

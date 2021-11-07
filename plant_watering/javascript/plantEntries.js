@@ -23,7 +23,7 @@ entryList.forEach(entry => entry.lastWater = new Date(entry.lastWater));
 function submitNewEntry() {
 	const form = document.getElementById("plantForm");
 	const newEntry = new PlantEntry(
-		form["plantName"].value, 
+		form["plantName"].value.slice(0, 9), 
 		parseInt(form["cycleLength"].value));
 	entryList.push(newEntry);
 	sessionStorage.setItem("entryList", JSON.stringify(entryList));
@@ -44,13 +44,13 @@ function renderEntries() {
 				`<div class = "smallimage green">
 					<img src="images/idlePlant.png" style="width:80px;position:relative;top:10px;">
 					<button class="delete" onclick="deleteEntry(${i});">
-						<img src="images/delete_icon.png" style="position:relative; right:1px; top:1px;">
+						<img src="images/delete_icon.png" style="position:relative; right:2px; top:1px;">
 					</button>
 				</div>
 				<div class = "textInfo">
-					<p class="textDom">${entry.name}</p>
+					<p class="textDom midgreen">${entry.name}</p>
 					<p class="textSub">Next Water:</p>
-					<div class="dateBox green">
+					<div class="dateBox brown">
 						<p class="textDom2" id="${i}">${getDateString(nextWater(entry))}</p>
 					</div>
 					<p class="textSub">(every ${entry.cycleLength} days)</p>	
@@ -92,7 +92,7 @@ function waterEntry(i) {
 
 //deletes a plant entry
 function deleteEntry(i) {
-	entryList.splice(i, i+1);
+	entryList.splice(i, 1);
 	sessionStorage.setItem("entryList", JSON.stringify(entryList));
 	location.reload();
 }
