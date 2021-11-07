@@ -2,20 +2,55 @@
 <html>
 <head>
 	<title> Menu </title>
+	<style>
+		body {
+			font-family: Garamond, serif;
+			background-color:  #111411;
+			color: white;
+			font-size: 20px;
+		}
+
+		.screen{
+			max-width: 1000px;
+			margin: 30px auto;
+			border-radius: 5px;
+			padding: 20px;
+			background-color: #1c211c;
+		}
+
+		a { color: #f2de57; }
+	
+		a:visited {	color: #ffaa4a;}
+
+		a:hover { color: #c9f060; }
+
+		hr {
+			border: 0;
+			background-color: white;
+			height: 2px;
+		}
+
+	</style>
 </head>
 <body>
-	<div class = "headerBlock">
-		<h1> Experience and Interaction </h1>
+	<div class="screen">
+		<div class = "headerBlock">
+			<h1> Omi Johnson Coursework </h1>
+			<h3> ARTF 2223: Experience and Interaction </h3>
+		</div>
+		<p> Welcome! The class ARTG 2223: Experience and Interaction intends to teach students how to create well designed interactive experiences. Most projects involve creating app drafts in Adobe XD and then implementing our designs as HTML/CSS web applications. </p>
+		<div class = "headerBlock">
+			<h2> My Projects </h2>
+		</div>
+		<hr>
+		<ul>
+			<li> <a href="plant_watering/index.html" target="_blank"> <h3>Plant Watering Application</h3> </a>
+				<p> Web application for a plant watering reminder app. Allows for creation and deletion of plant entries with user-specified name and watering cycle length. This assignment was originally only assigned for HTML/CSS but I added Javascript independently. </p>
+				<a href="https://xd.adobe.com/view/ed157a8b-ef13-4656-80bf-9180a1ff79fb-b846/" target="_blank"> 
+				Original Adobe XD mockups here. </a>
+				<p> <b>Planned next steps:</b> uploading images to plant entries, allowing entries to be edited, color scheme improvements. </p>
+			</li>
+		</ul>
 	</div>
-	<p> Welcome! The class ARTG 2223: Experience and Interaction intends to teach students how to create well designed interactive experiences. Many of our projects involve creating app drafts in Adobe XD and then implementing our designs as HTML/CSS web applications. </p>
-	<div class = "headerBlock">
-		<h2> Projects </h2>
-	</div>
-	<ul>
-		<li> <a href="plant_watering/index.html" target="_blank"> Plant Watering Application </a></li>
-		<li> Earth </li>
-		<li> Fire </li>
-		<li> Air </li>
-	</ul>
 </body>
 </html>
