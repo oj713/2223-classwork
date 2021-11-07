@@ -1,0 +1,81 @@
+.entries {
+	overflow: auto;
+	height: 550px;
+}
+.entries::-webkit-scrollbar {display: none;}
+
+.entry{
+	border-bottom: 2px solid #707070;
+	padding: 20px;
+	width: 360px;
+	height: 120px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+}
+
+.smallimage{
+	width: 100px;
+	height: 110px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.textInfo {
+	text-align: left;
+	padding-left: 20px;
+}
+
+.dateBox {
+	border-radius: 10px;
+	padding: 1px 10px;
+	position: relative;
+	right: 5px;
+}
+
+.textDom {
+	color: white;
+	font-size:  22px;
+	line-height: 5px;
+}
+
+.textDom2{
+	color: white;
+	font-size: 25px;
+	line-height: 0px;
+}
+
+.textSub{
+	color: #707070;
+	font-size: 12px;
+	line-height: 0px;
+}
+
+.watering{
+	height: 90px;
+	width: 90px;
+	border-radius: 45px;
+	border: 3px solid #67B1E3;
+	background-color: #DAF3FA;
+	position: absolute;
+	right: 25px;
+}
+
+.watering:hover{
+	background-color: #C5E3EB;
+}
+
+.delete{
+	border: none;
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	background-color: #FF8471;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+}
+
+.delete:hover {
+	background-color: #e66b65;
+}

@@ -3,6 +3,8 @@
 <head>
 	<title>New Plant</title>
 	<link rel="stylesheet" href="css/external_style.css" type="text/css">
+	<link rel="stylesheet" href="css/newPlant_style.css" type="text/css">
+	<script src="javascript/plantEntries.js"></script>
 </head>
 <body>
 <div class = "screen box">
@@ -10,19 +12,27 @@
 		<a class="cancel" href = "index.html"> &lt Cancel </a>
 		<h1 class = "balign text"> New Plant </h1>
 	</div>
-	<div class = "forms box">
-		<form>
-		<div class = "image green"></div>
-		<input type="text" class = "text" value="New Plant"><br>
+	<div class = "formbox box">
+		<form action="" method="post" id="plantForm">
+		<div class = "image green">
+			<img src="images/idlePlant.png" style="width:80%;position:relative;top:10px;">
+		</div>
+		<input type="text" class = "text" name="plantName" value="New Plant"><br>
 		<h1 class = "text"> Water this plant every </h1>
-		<select name="7">
+		<select name="cycleLength">
+			<option value = "4">4</option>
+			<option value = "5">5</option>
 			<option value = "6">6</option>
 			<option value = "7">7</option>
 			<option value = "8">8</option>
 			<option value = "9">9</option>
+			<option value = "10">10</option>
+			<option value = "11">11</option>
+			<option value = "12">12</option>
+			<option value = "13">13</option>
 		</select>
 		<h1 class = "text"> days </h1>
-		<div class="flexrow">
+		<div class="flexrow notifyBar">
 			<h1 class = "text"> Notify Me: </h1>
 			<!-- Rounded switch -->
 			<label class="switch">
@@ -31,10 +41,10 @@
 			</label>
 		</div>
 		</form>
+		<a href = "index.html" onclick = "submitNewEntry();"> 
+			<div class = "footer lgreen box"> <h1 class = "text"> CREATE </h1> </div> 
+		</a>
 	</div>
-	<a href = "index.html"> 
-		<div class = "footer lgreen box"> <h1 class = "text"> CREATE </h1> </div> 
-	</a>
 </div>
 </body>
 </html>
