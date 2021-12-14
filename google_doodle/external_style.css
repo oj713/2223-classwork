@@ -1,0 +1,93 @@
+
+/* Note:  i'm animating this piece using transitions instead of animations 
+because I wanted all elements to be reversible as soon as the user moves
+mouse off of handle */
+
+div {
+	display: block;
+}
+
+.wrapper {
+	width: 800px;
+	height: 366px;
+	position: relative;
+	margin: 100px auto;
+	overflow: hidden;
+	border: none;
+}
+
+.wrapper img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	border: none;
+}
+
+.google {
+	z-index: 2;
+	top: 0;
+}
+
+/* hoverable area to trigger effects */
+.trigger {
+	border: none;
+	width: 58px;
+	height: 251px;
+	position: absolute;
+	top: 20px;
+	left: 592px;
+	z-index: 5;
+}
+
+.sharks {
+	z-index: 1;
+	top: 0;
+	transition: top 12s ease-in-out 0s;
+}
+
+.trigger:hover ~ .sharks {
+	top: -507px;
+}
+
+.grip {
+	z-index: 4;
+	top: 20px;
+	transition: top .6s ease-in 0s;
+}
+
+.trigger:hover ~ .grip {
+	top: 240px;
+}
+
+.handle {
+	z-index:  3;
+	top: 35px;
+	transition: all .6s ease-in 0s;
+}
+
+.trigger:hover ~ .handle {
+	top: 145px;
+	transform: rotateX(180deg);
+}
+
+/*
+scrap code -- fixes issue with handle movement but can't sync grip and handle 
+
+.handle {
+	z-index: 3;
+	border: none;
+	position: absolute;
+	width: 100%;
+	height: 220px;
+	top: 35px;
+	background-image: url("img/handle.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: all 3s linear 0s;
+}
+
+.trigger:hover ~ .handle {
+	transform:  rotateX(180deg);
+}
+*/
+
